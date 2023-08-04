@@ -65,6 +65,7 @@ body {
   background: #0a61f7;
   color: #fff;
   text-align: center;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
@@ -77,7 +78,7 @@ body {
   background-color: #f9fafc;
   padding: 100px 0;
 }
-.rates-section.title{
+.rates-section.title {
   margin-bottom: 20px;
 }
 .table {
@@ -122,6 +123,7 @@ td {
   border: 1px solid #0a61f7;
   color: #0a61f7;
   text-align: center;
+  font-family: inherit;
   font-size: 12px;
   font-weight: 500;
   line-height: 19.6px;
@@ -139,10 +141,10 @@ td {
 }
 
 /* left-part */
-.create-account-section.title{
+.create-account-section.title {
   margin-bottom: 50px;
 }
-.create-account-section.text{
+.create-account-section.text {
   margin-bottom: 40px;
   min-width: 500px;
 }
@@ -152,3 +154,54 @@ td {
   margin-left: 30px;
   margin-bottom: 15px;
 }
+
+/* right-part */
+input,
+select,
+fieldset,
+textarea {
+  border-radius: 4px;
+  border: 1px solid #95a1bb;
+  padding: 14px 15px;
+}
+input,
+select,
+fieldset,
+textarea,
+label,
+legend,
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #95a1bb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  font-family: inherit;
+}
+input [type="text"] {
+  width: 100%;
+}
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 230px;
+  height: 50px;
+}
+fieldset {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+}
+form.buttom {
+  width: 100%;
+}
+select {
+  background: url(./img/Arrow-down.svg) no-repeat right 15px top 50%;
+  appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(./img/Calendar.svg) no-repeat;
+}
+

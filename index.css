@@ -205,3 +205,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(./img/Calendar.svg) no-repeat;
 }
 
+/* footer */
+.footer {
+  background: #0a61f7;
+  text-align: center;
+  padding: 20px 0;
+}
+.small {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}

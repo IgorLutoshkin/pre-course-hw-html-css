@@ -102,6 +102,11 @@ body {
 }
 
 /* rates-section */
+.rates-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .rates-section {
   background-color: #f9fafc;
   padding: 100px 0;
@@ -167,6 +172,10 @@ td {
 .create-account-section {
   padding: 100px 0;
 }
+.create-account-wrap{
+display: flex;
+justify-content: space-between;
+}
 
 /* left-part */
 .create-account-section.title {
@@ -184,6 +193,13 @@ td {
 }
 
 /* right-part */
+form{
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 input,
 select,
 fieldset,
@@ -216,6 +232,10 @@ input[type="date"],
 select {
   width: 230px;
   height: 50px;
+}.stack,
+fieldset{
+  display: flex;
+  column-gap: 30px;
 }
 fieldset {
   width: 100%;

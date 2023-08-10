@@ -102,7 +102,7 @@ body {
 }
 
 /* rates-section */
-.rates-wrap{
+.rates-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,8 +172,8 @@ td {
 .create-account-section {
   padding: 100px 0;
 }
-.create-account-wrap{
-display: flex;
+.create-account-wrap {
+  display: flex;
 justify-content: space-between;
 }
 
@@ -181,9 +181,9 @@ justify-content: space-between;
 .create-account-section.title {
   margin-bottom: 50px;
 }
-.create-account-section.text {
+.create-account-section .text {
   margin-bottom: 40px;
-  min-width: 500px;
+  max-width: 500px;
 }
 .list-item {
   list-style-image: url("./img/Check.svg");
@@ -193,11 +193,16 @@ justify-content: space-between;
 }
 
 /* right-part */
-form{
+form {
   width: 100%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+.fieldset-wrap {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 input,
@@ -232,12 +237,18 @@ input[type="date"],
 select {
   width: 230px;
   height: 50px;
-}.stack,
-fieldset{
+  flex-grow: 1;
+}
+.stack,
+fieldset {
   display: flex;
   column-gap: 30px;
 }
-fieldset {
+fieldset{
+  width: 100%;
+  padding: 30px 15px;
+}
+textarea {
   width: 100%;
   min-height: 80px;
   resize: none;

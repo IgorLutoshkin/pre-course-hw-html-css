@@ -8,12 +8,20 @@
 a {
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
 ul {
   list-style: none;
 }
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover{
+  transform: translateY(-5px);
 }
 .title {
   color: #363940;
@@ -238,6 +246,7 @@ select {
   width: 230px;
   height: 50px;
   flex-grow: 1;
+  cursor: pointer;
 }
 .stack,
 fieldset {

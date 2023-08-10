@@ -48,14 +48,14 @@ body {
   margin-right: auto;
   border: 1px solid red;
 }
-.hader-wrapper{
+.hader-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu{
-display: flex;
-gap: 24px;
+.menu {
+  display: flex;
+  gap: 24px;
 }
 .menu-link {
   color: #fff;
@@ -67,14 +67,24 @@ gap: 24px;
 }
 
 /* main-section */
+.main-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 800px;
+}
+.main-img {
+  align-self: flex-end;
+}
 .main-title {
   color: #363940;
   font-size: 58px;
   font-weight: 500;
   line-height: 68px;
 }
-.text {
+.main .text {
   margin-bottom: 40px;
+  max-width: 380px;
 }
 .btn {
   width: 152px;

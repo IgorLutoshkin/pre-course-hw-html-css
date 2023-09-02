@@ -8,7 +8,7 @@
 a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 ul {
@@ -18,9 +18,9 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-button:hover{
+button:hover {
   transform: translateY(-5px);
 }
 .title {
@@ -182,7 +182,7 @@ td {
 }
 .create-account-wrap {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* left-part */
@@ -253,7 +253,7 @@ fieldset {
   display: flex;
   column-gap: 30px;
 }
-fieldset{
+fieldset {
   width: 100%;
   padding: 30px 15px;
 }
@@ -286,25 +286,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 22px;
 }
 
-
-@media  screen and (max-width: 1440px){
-.main-wrap{
-  flex-direction: column;
-}
-.main-info{
-  align-self: flex-start;
-  margin: 100px 0 80px;
-}
-.main-img{
-  align-self: center;
-}
-.table{
-  width: 940px;
-}
-.table-wrap{
-
-  max-width: 940px;
-  overflow-x: auto;
-  width: 100%;
-}
+@media screen and (max-width: 1440px) {
+  .main-wrap {
+    flex-direction: column;
+  }
+  .main-info {
+    align-self: flex-start;
+    margin: 100px 0 80px;
+  }
+  .main-img {
+    align-self: center;
+  }
+  .table {
+    width: 940px;
+  }
+  .table-wrap {
+    max-width: 940px;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .create-account-wrap {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .account-info-wrap .text {
+    max-width: unset;
+  }
+  form {
+    align-self: center;
+  }
 }

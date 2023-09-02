@@ -342,4 +342,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 40px;
     text-align: center;
   }
+  .create-account-wrap{
+    gap: 60px;
+  }
+  label{
+    white-space: nowrap;
+  }
+  fieldset{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
 }

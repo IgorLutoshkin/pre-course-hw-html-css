@@ -338,4 +338,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 52px;
     line-height: 60px;
   }
+  .rates-section .text{
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }

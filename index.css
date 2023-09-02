@@ -40,6 +40,7 @@ button:hover {
 html,
 body {
   font-family: "Rubik", sans-serif;
+  min-width: 375px;
 }
 
 /* header */
@@ -54,7 +55,7 @@ body {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
+  /*  border: 1px solid red; */
 }
 .header-wrapper {
   display: flex;
@@ -85,7 +86,9 @@ body {
   min-height: 800px;
 }
 .main-img {
+  max-width: 676px;
   align-self: flex-end;
+  width: 100%;
 }
 .main-title {
   color: #363940;
@@ -98,7 +101,7 @@ body {
   max-width: 380px;
 }
 .btn {
-  width: 152px;
+  min-width: 152px;
   height: 50px;
   border-radius: 4px;
   background: #0a61f7;
@@ -294,6 +297,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width: 1440px) {
   .main-wrap {
     flex-direction: column;
+    min-height: auto;
   }
   .main-info {
     align-self: flex-start;
@@ -331,24 +335,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .menu-icon {
     display: block;
   }
-  .main-info{
+  .main-info {
     margin: 60px 0;
   }
-  .main-title{
+  .main-title {
     font-size: 52px;
     line-height: 60px;
   }
-  .rates-section .text{
+  .rates-section .text {
     margin-bottom: 40px;
     text-align: center;
   }
-  .create-account-wrap{
+  .create-account-wrap {
     gap: 60px;
   }
-  label{
+  label {
     white-space: nowrap;
   }
-  fieldset{
+  fieldset {
     flex-wrap: wrap;
     row-gap: 20px;
   }

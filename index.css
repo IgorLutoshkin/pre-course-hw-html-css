@@ -73,6 +73,9 @@ body {
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
+.menu-icon{
+  display: none;
+}
 
 /* main-section */
 .main-wrap {
@@ -286,6 +289,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 22px;
 }
 
+/* adaptive for 1440px */
+
 @media screen and (max-width: 1440px) {
   .main-wrap {
     flex-direction: column;
@@ -314,5 +319,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   form {
     align-self: center;
+  }
+}
+
+
+
+/* adaptive for mobile */
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+  .menu-icon{
+    display: block;
   }
 }
